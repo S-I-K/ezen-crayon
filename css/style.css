@@ -1,0 +1,159 @@
+/* font */
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* css variable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* container */
+.container {
+  width: 1440px;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+#wrap {
+  width: 100%;
+  height: 200vh;
+  background: #444;
+  /* header */
+  /* main */
+}
+#wrap header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+#wrap header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  /* left */
+  /* center */
+  /* right */
+}
+#wrap header .container .logo img {
+  width: 170px;
+}
+#wrap header .container .category {
+  display: flex;
+}
+#wrap header .container .category li a {
+  font-size: 16px;
+  font-family: "SUIT-Regular";
+  color: #1a1a1c;
+  font-weight: 600;
+}
+#wrap header .container .category li .highlight {
+  color: #fc9199;
+  font-weight: 700;
+}
+#wrap header .container .category li:not(:last-child) {
+  margin-right: 50px;
+}
+#wrap header .container .user-menu {
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+}
+#wrap header .container .user-menu a {
+  font-family: "SUIT-Regular";
+  font-weight: 600;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 300px;
+  font-size: 14px;
+}
+#wrap header .container .user-menu .join {
+  color: #1a1a1c;
+  background: #fff;
+  border: 1px solid #1a1a1c;
+}
+#wrap header .container .user-menu .login {
+  color: #fff;
+  background: #1a1a1c;
+  border: 1px solid #1a1a1c;
+  margin-left: 10px;
+}
+#wrap main {
+  width: 100%;
+  /* intro */
+}
+#wrap main .intro {
+  width: 100%;
+  height: 780px;
+  background: rgb(238, 181, 107);
+  display: flex;
+  justify-content: center;
+}
+#wrap main .intro .container {
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text box */
+  /* card */
+}
+#wrap main .intro .container .text {
+  width: 50%;
+}
+#wrap main .intro .container .text .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+#wrap main .intro .container .text .text-box span {
+  font-family: "SUIT-Regular";
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+#wrap main .intro .container .text .text-box span b {
+  font-size: 72px;
+  color: #fc9199;
+  font-style: italic;
+  margin-right: 10px;
+}
+#wrap main .intro .container .text .text-box span:not(:last-child) {
+  margin-bottom: 20px;
+}
+#wrap main .intro .container .card {
+  width: 50%;
+  display: flex;
+}
+#wrap main .intro .container .card #card-wrap {
+  width: 320px;
+  height: 440px;
+}
+#wrap main .intro .container .card #card-wrap .swiper-wrapper .swiper-slide:nth-child(1) {
+  background: url("../images/card_1.jpg") no-repeat center/cover;
+  border-radius: 14px;
+}
+#wrap main .intro .container .card #card-wrap .swiper-wrapper .swiper-slide:nth-child(2) {
+  background: url("../images/card_2.jpg") no-repeat center/cover;
+  border-radius: 14px;
+}
