@@ -108,7 +108,6 @@ li {
   justify-content: center;
 }
 #wrap main .intro .container {
-  border: 1px solid red;
   height: 100%;
   display: flex;
   align-items: center;
@@ -148,6 +147,9 @@ li {
 #wrap main .intro .container .card #card-wrap {
   width: 320px;
   height: 440px;
+}
+#wrap main .intro .container .card #card-wrap .swiper-wrapper .swiper-slide {
+  font-size: 0;
 }
 #wrap main .intro .container .card #card-wrap .swiper-wrapper .swiper-slide:nth-child(1) {
   background: url("../images/card_1.jpg") no-repeat center/cover;

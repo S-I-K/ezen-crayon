@@ -114,7 +114,7 @@ li {
             display: flex;
             justify-content: center;
             .container {
-                border: 1px solid red;
+                // border: 1px solid red;
                 height: 100%;
                 display: flex;
                 align-items: center;
@@ -156,6 +156,9 @@ li {
                         height: 440px;
                         .swiper-wrapper {
                             // margin-left: 40px;
+                            .swiper-slide{
+                                font-size: 0;
+                            }
                             .swiper-slide:nth-child(1) {
                                 background: url('../images/card_1.jpg') no-repeat center / cover;
                                 border-radius: 14px;
