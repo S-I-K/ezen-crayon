@@ -281,7 +281,7 @@ li {
   display: flex;
   justify-content: center;
   border-radius: 16px;
-  box-shadow: 2px 2px 5px 5px rgba(4, 0, 0, 0.1333333333);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 #wrap main #category .container .left .home a {
   display: block;
@@ -343,7 +343,7 @@ li {
   background: #f5ee9b;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 2px 2px 5px 5px rgba(4, 0, 0, 0.1333333333);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 42px;
 }
 #wrap main #category .container .center .life a {
@@ -403,7 +403,7 @@ li {
   background: #adfcfb;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 2px 2px 5px 5px rgba(4, 0, 0, 0.1333333333);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 #wrap main #category .container .center .packaging a {
   display: block;
@@ -470,7 +470,7 @@ li {
   background: #bef2ba;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 2px 2px 5px 5px rgba(4, 0, 0, 0.1333333333);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 #wrap main #category .container .right .furniture a img {
   position: absolute;
@@ -537,7 +537,7 @@ li {
   background: #d3bef6;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 2px 2px 5px 5px rgba(4, 0, 0, 0.1333333333);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 #wrap main #category .container .right .bottom .office a img {
   position: relative;
@@ -598,7 +598,7 @@ li {
   background: #fcb75b;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 2px 2px 5px 5px rgba(4, 0, 0, 0.1333333333);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 #wrap main #category .container .right .bottom .pency a img {
   width: 240px;
