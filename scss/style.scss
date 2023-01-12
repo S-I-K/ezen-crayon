@@ -5,11 +5,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 /* css variable */
 $main-text-color: #1a1a1c;
 $main-color: #fc9199;
 $sub-color: #fdac64;
 $font: 'SUIT-Regular';
+$en-font: 'Montserrat', sans-serif;
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +32,7 @@ li {
 
 #wrap {
     width: 100%;
-    height: 200vh;
+    height: auto;
     background: #444;
     /* header */
     header {
@@ -167,6 +169,96 @@ li {
                                 background: url('../images/card_2.jpg') no-repeat center / cover;
                                 border-radius: 14px;
                             }
+                        }
+                    }
+                }
+            }
+        }
+        /* news */
+        .news {
+            padding-top: 160px;
+            width: 100%;
+            height: auto;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .container {
+                // border: 1px solid red;
+                // background: rgb(168, 168, 255);
+                .title-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 60px;
+                    .label {
+                        color: $main-color;
+                        font-family: $en-font;
+                        font-weight: 500;
+                        letter-spacing: -.025em;
+                        margin-bottom: 10px;
+                    }
+                    .title {
+                        font-family: $font;
+                        font-size: 32px;
+                        color: $main-text-color;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+                #news {
+                    padding-bottom: 60px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            // border: 1px solid red;
+                            display: flex;
+                            justify-content: center;
+                            .img-box {
+                                width: 560px;
+                                height: 340px;
+                                // border: 1px solid red;
+                                margin-right: 40px;
+                                background: $main-color;
+                                border-radius: 14px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                overflow: hidden;
+                                img {
+                                    width: 120%;
+                                }
+                            }
+                            .text-box{
+                                width: 560px;
+                                // border: 1px solid red;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                h3 {
+                                    font-size: 24px;
+                                    font-family: $font;
+                                    font-weight: 600;
+                                    color: $main-text-color;
+                                    letter-spacing: -.025em;
+                                    margin-bottom: 20px;
+                                }
+                                p {
+                                    font-size: 16px;
+                                    font-family: $font;
+                                    font-weight: 500;
+                                    color: $main-text-color;
+                                    letter-spacing: -.025em;
+                                }
+                            }
+                        }
+                    }
+                    #news-pager {
+                        bottom: 0;
+                        .swiper-pagination-bullet-active {
+                            transform: scaleX(2);
+                            border-radius: 2px;
+                            background: $main-color;
                         }
                     }
                 }
