@@ -34,6 +34,7 @@ li {
   background: #444;
   /* header */
   /* main */
+  /* footer */
 }
 #wrap header {
   width: 100%;
@@ -101,6 +102,8 @@ li {
   width: 100%;
   /* intro */
   /* news */
+  /* product */
+  /* made */
 }
 #wrap main .intro {
   width: 100%;
@@ -236,8 +239,88 @@ li {
 #wrap main .news .container #news #news-pager {
   bottom: 0;
 }
+#wrap main .news .container #news #news-pager .swiper-pagination-bullet {
+  background: red;
+}
 #wrap main .news .container #news #news-pager .swiper-pagination-bullet-active {
   transform: scaleX(2);
   border-radius: 2px;
   background: #fc9199;
+}
+#wrap footer {
+  width: 100%;
+  background: #101010;
+  display: flex;
+  justify-content: center;
+  font-family: "NanumSquareRound";
+}
+#wrap footer .container {
+  width: 1440px;
+  height: auto;
+  background: #101010;
+  text-align: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+#wrap footer .container .logo {
+  margin-bottom: 10px;
+}
+#wrap footer .container .customer_1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "SUIT-Regular";
+}
+#wrap footer .container .customer_2 {
+  font-size: 34px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin: 6px 0;
+}
+#wrap footer .container .customer_3 {
+  font-family: "SUIT-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+#wrap footer .container .customer_4 {
+  font-family: "SUIT-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#wrap footer .container .info_1 {
+  color: #fff;
+  font-family: "SUIT-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+#wrap footer .container .info_2 {
+  color: #fff;
+  font-family: "SUIT-Regular";
+  font-weight: 400;
+  font-size: 14px;
+}
+#wrap footer .container .info_2 a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+#wrap footer .container ul {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+#wrap footer .container li:not(:last-child) {
+  list-style: none;
+  margin-right: 40px;
+}
+#wrap footer .container span {
+  color: #fff;
+  font-family: "SUIT-Regular";
+  font-weight: 400;
+  font-size: 14px;
 }

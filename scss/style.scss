@@ -255,6 +255,9 @@ li {
                     }
                     #news-pager {
                         bottom: 0;
+                        .swiper-pagination-bullet{
+                            background: red;
+                        }
                         .swiper-pagination-bullet-active {
                             transform: scaleX(2);
                             border-radius: 2px;
@@ -263,6 +266,97 @@ li {
                     }
                 }
             }
+        }
+        /* product */
+        .product {
+
+        }
+        /* made */
+        .made {
+
+        }
+    }
+    /* footer */
+    footer {
+        width: 100%;
+        background: #101010;
+        display: flex;
+        justify-content: center;
+        font-family: 'NanumSquareRound';
+        .container {
+          width: 1440px;
+          height: auto;
+          background: #101010;
+          text-align: center;
+          justify-content: center;
+        //   border: 1px solid red;
+          padding: 30px 20px;
+          .logo {
+            margin-bottom: 10px;
+          }
+        
+          .customer_1 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            font-family: $font;
+          }
+          .customer_2 {
+            font-size: 34px;
+            font-family: $en-font;
+            color: #fff;
+            margin: 6px 0;
+          }
+          .customer_3 {
+            font-family: $font;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 4px;
+          }
+          .customer_4 {
+            font-family: $font;
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+          }
+        
+          .info_1 {
+            color: #fff;
+            font-family: $font;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 4px;
+          }
+          .info_2 {
+            color: #fff;
+            font-family: $font;
+            font-weight: 400;
+            font-size: 14px;
+            a {
+              color: #fff;
+              font-weight: 700;
+              font-size: 15px;
+            }
+          }
+        
+          ul {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+          }
+          li:not(:last-child) {
+            list-style: none;
+            margin-right: 40px;
+          }
+        
+          span {
+            color: #fff;
+            font-family: $font;
+            font-weight: 400;
+            font-size: 14px;
+          }
         }
     }
 }

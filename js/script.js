@@ -1,4 +1,8 @@
 $(()=>{
+    /* a tag default option remove */
+    $('a').click((e)=>{
+        e.preventDefault();
+    });
     var card = new Swiper("#card-wrap", {
         effect: "cards",
         grabCursor: true,
