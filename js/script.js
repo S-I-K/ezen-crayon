@@ -26,4 +26,12 @@ $(()=>{
             clickable: true,
         },
     });
+    var made = new Swiper("#made", {
+        // slidesPerView: 'auto',
+        spaceBetween: 40,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 });

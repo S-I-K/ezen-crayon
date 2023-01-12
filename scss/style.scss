@@ -273,7 +273,30 @@ li {
         }
         /* made */
         .made {
-
+            padding-top: 160px;
+            width: 100%;
+            height: auto;
+            background: rgb(85, 166, 39);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .container{
+                border: 1px solid red;
+                #made {
+                    .swiper-wrapper {
+                        /* made1 */
+                        .swiper-slide {
+                            background: #f2edd0;
+                            width: 100%;
+                            height: 580px;
+                            border-radius: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
         }
     }
     /* footer */
