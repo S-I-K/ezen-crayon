@@ -13,7 +13,9 @@
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-    
+    <!-- scrollToGiveClass -->
+    <script src="./js/jquery.scrollToGiveClass.js" defer></script>
+
     <title>crayon</title>
   </head>
   <body>
@@ -215,20 +217,235 @@
               </div><!--// .bottom -->
             </div> <!--// .right -->
           </div> <!--// .category_box -->
-        </div> <!--// #category -->
+        </div>
+        <!-- product -->
+        <div class="best-items">
+          <div class="container"> 
+            <div class="subtitle">
+              <p>PRODUCT</p>
+            </div>
+            <div class="title">
+              <p>크레용의 베스트 상품</p>
+            </div>
+            <!-- 상품 사진 -->
+            <div class="best_img">
+              <ul class="clearfix">
+                <li>
+                  <div class="img_box">
+                    <a href="#"><img src="images/best1.png" alt="best1"></a>
+                  </div>
+                  <!------ 상품 설명 내역 ------->
+                  <div class="des_box">
+                    <div class="brand_name">
+                      <p>기키</p>
+                    </div>
+                    <div class="name">
+                      <a href="#">[기키] 극세사 모양 러그</a>
+                    </div>
+                    <div class="price_box">
+                      <span class="price">19,600</span>
+                      <span class="won">원</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img_box">
+                    <a href="#"><img src="images/best2.png" alt="best1"></a>
+                  </div>
+                  
+                  <!------ 상품 설명 내역 ------->
+                  <div class="des_box">
+                    <div class="brand_name">
+                      <p>금홍팬시</p>
+                    </div>
+                    <div class="name">
+                      <a href="#">[금홍팬시] 아크릴 12색 물감 세트</a>
+                    </div>
+                    <div class="price_box">
+                      <span class="price">25,900</span>
+                      <span class="won">원</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img_box">
+    
+                    <a href="#"><img src="images/best3.png" alt="best1"></a>
+                  </div>
+                  <!------ 상품 설명 내역 ------->
+                  <div class="des_box">
+                    <div class="brand_name">
+                      <p>아르디움</p>
+                    </div>
+                    <div class="name">
+                      <a href="#">[아르디움] 똑딱이 컬러 볼펜</a>
+                    </div>
+                    <div class="price_box">
+                      <span class="price">9,900</span>
+                      <span class="won">원</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img_box">
+                    <a href="#"><img src="images/best4.png" alt="best1"></a>
+                  </div>
+                  <!------ 상품 설명 내역 ------->
+                  <div class="des_box">
+                    <div class="brand_name">
+                      <p>플레인홈</p>
+                    </div>
+                    <div class="name">
+                      <a href="#">[플레인홈] 쉽고 편한 계산기</a>
+                    </div>
+                    <div class="price_box">
+                      <span class="price">13,400</span>
+                      <span class="won">원</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <!-- made -->
         <div class="made">
           <!-- container -->
           <div class="container">
+            <!-- title -->
+            <div class="title-wrap">
+              <div class="label">news</div>
+              <h2 class="title">
+                크레용은 이런 제품을<br/>
+                만들었어요
+              </h2>
+            </div>
+            <!-- slide wrap -->
             <div id='made' class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <!-- made1 -->
                 <div class="swiper-slide">
-                  
+                  <!-- background -->
+                  <div class="item-bg"></div>
+                  <!-- contents -->
+                  <div class="item-box">
+                    <ul class="text-box">
+                      <li class="title">크레용 시그니처 텀블러</li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                    </ul>
+                    <ul class="text-box">
+                      <li>
+                        da*sik: 라면 물 담아넣기 좋아요~
+                      </li>
+                      <li>
+                        *a*un: 호신용으로 쓰고 있는데 좋아요!
+                      </li>
+                      <li>
+                        n**un: 디자인이 예뻐요
+                      </li>
+                      <li>
+                        zx*aq: 청소하기 간편해요
+                      </li>
+                      <li>
+                        qvb**: 가성비가 좋아요
+                      </li>
+                    </ul>
+                    <img src="./images/made1.png" alt="made item">
+                  </div>
                 </div>
                 <!-- made2 -->
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">
+                  <!-- background -->
+                  <div class="item-bg"></div>
+                  <!-- contents -->
+                  <div class="item-box">
+                    <ul class="text-box">
+                      <li class="title">크레용 만년 탁상 달력</li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                    </ul>
+                    <ul class="text-box">
+                      <li>
+                        da*sik: 라면 받침대로 쓰기 좋아요
+                      </li>
+                      <li>
+                        *a*un: 디자인이 깔끔해서 좋아요
+                      </li>
+                      <li>
+                        n**un: 어느곳에 둬도 잘어울려요
+                      </li>
+                      <li>
+                        zx*aq: 한눈에 일정 확인하기 좋아요
+                      </li>
+                      <li>
+                        qvb**: 좋아요
+                      </li>
+                    </ul>
+                    <img src="./images/made2.png" alt="made item">
+                  </div>
+                </div>
+                <!-- made3 -->
+                <div class="swiper-slide">
+                  <!-- background -->
+                  <div class="item-bg"></div>
+                  <!-- contents -->
+                  <div class="item-box">
+                    <ul class="text-box">
+                      <li class="title">크레용 다이어리</li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                      <li>
+                        스테인레스 재질로 보온, 보냉에 우수하고<br/>
+                        뚜껑이 있어 휴대하기가 편리합니다
+                      </li>
+                    </ul>
+                    <ul class="text-box">
+                      <li>
+                        da*sik: 일상 기록용으로 구입했는데 좋아용
+                      </li>
+                      <li>
+                        *a*un: 필기할때 쓱싹 거리는 소리나서 좋아요
+                      </li>
+                      <li>
+                        n**un: 디자인이 예뻐요
+                      </li>
+                      <li>
+                        zx*aq: 쪽수가 적혀있어서 좋아요
+                      </li>
+                      <li>
+                        qvb**: 친구한테 선물했는데 좋아해요
+                      </li>
+                    </ul>
+                    <img src="./images/made3.png" alt="made item">
+                  </div>
+                </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>

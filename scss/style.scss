@@ -1,7 +1,22 @@
 /* font */
+/* 수트 */
 @font-face {
     font-family: 'SUIT-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 나눔스퀘어라운드 */
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 삼립호빵 */
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -12,6 +27,10 @@ $main-color: #fc9199;
 $sub-color: #fdac64;
 $font: 'SUIT-Regular';
 $en-font: 'Montserrat', sans-serif;
+$title-font: 'SDSamliphopangche_Basic';
+$body-font: 'NanumSquareRound';
+
+/* common styles */
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +48,10 @@ a {
 li {
     list-style: none;
 }
+/* clear fix */
+.clearfix::after {
+    content: ''; display: block; clear: both;
+}
 
 #wrap {
     width: 100%;
@@ -44,6 +67,7 @@ li {
         top: 0;
         left: 0;
         z-index: 99;
+        transition: all .4s;
         .container {
             display: flex;
             align-items: center;
@@ -104,6 +128,9 @@ li {
                 }
             }
         }
+    }
+    header.fixed {
+        background: rgba(255, 255, 255, .4);
     }
     /* main */
     main {
@@ -260,7 +287,7 @@ li {
                         }
                         .swiper-pagination-bullet-active {
                             transform: scaleX(2);
-                            border-radius: 2px;
+                            border-radius: 40%;
                             background: $main-color;
                         }
                     }
@@ -707,33 +734,213 @@ li {
             }
         }
         /* product */
-        .product {
+        .best-items {
+            width: 100%;
+            padding-top: 160px;
+            background: #fff;
+            .container {
+                width: 1440px;
+                height: auto;
+                padding: 0 20px;
+                margin: 0 auto;
+                .subtitle {
+                    color: $main-color;
+                    font-family: $body-font;
+                    font-weight: 500;
+                    letter-spacing: -.025em;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    p {}
+                }
+                .title {
+                    font-family: $title-font;
+                    font-size: 32px;
+                    color: $main-text-color;
+                    text-align: center;
+                    margin-bottom: 60px;
+                    p {
 
+                    }
+                }
+                .best_img {
+                    ul {
+                        display: flex;
+                        li {
+                            // float: left;
+                            padding-right:53px;
+                            .img_box {
+                                width: 320px; height: 320px;
+                                outline: 2px solid #c0c0c0;
+                                border-radius: 26px;
+                                a {
+                                    img {
+                                        width: 320px;
+                                        height: 320px;
+                                        transition: all .4s;
+                                    }
+                                    img:hover {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                            .des_box {
+                                margin-top: 30px;
+                                padding: 0 20px;
+                                font-family: $body-font;
+                                .brand_name {
+                                    margin-bottom: 10px;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    p{}
+                                }
+                                .name {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    margin-bottom: 20px;
+                                    a{
+
+                                    }
+                                }
+                                .price_box {
+                                    .price{
+                                        font-size: 25px;
+                                        font-weight: bold;
+                                    }
+                                    .won {
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                        li:nth-child(4){
+                            padding-right:0px;
+                        }
+                    }
+                }
+            }
         }
         /* made */
         .made {
-            padding-top: 160px;
+            padding: 160px 0;
             width: 100%;
             height: auto;
-            background: rgb(85, 166, 39);
+            background: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
             .container{
-                border: 1px solid red;
+                // border: 1px solid red;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                .title-wrap{
+                    position: absolute;
+                    top: 40px;
+                    z-index: 2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 60px;
+                    .label {
+                        color: $main-color;
+                        font-family: $body-font;
+                        font-weight: 500;
+                        letter-spacing: -.025em;
+                        margin-bottom: 10px;
+                    }
+                    .title {
+                        font-family: $title-font;
+                        font-size: 32px;
+                        color: $main-text-color;
+                        font-weight: normal;
+                        text-align: center;
+                    }
+                }
                 #made {
+                    width: 30%;
+                    transition: all 1s;
                     .swiper-wrapper {
+                        position: relative;
                         /* made1 */
                         .swiper-slide {
-                            background: #f2edd0;
+                            // background: rgb(255, 173, 173);
                             width: 100%;
-                            height: 580px;
+                            height: 500px;
                             border-radius: 50px;
                             display: flex;
-                            align-items: center;
+                            align-items: flex-end;
                             justify-content: center;
+                            position: relative;
+                            .item-bg {
+                                width: 100%;
+                                height: 400px;
+                                background: #f2edd0;
+                                border-radius: 50px;
+                                position: absolute;
+                                top: 0;
+                                z-index: -1;
+                            }
+                            .item-box {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {
+                                    height: 280px;
+                                }
+                                /* right */
+                                .text-box {
+                                    position: absolute;
+                                    right: 24%;
+                                    bottom: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    justify-content: center;
+                                    li:not(:last-child) {
+                                        margin-bottom: 10px;
+                                    }
+                                    li.title {
+                                        font-weight: 600;
+                                        font-size: 24px;
+                                        margin-bottom: 20px;
+                                        letter-spacing: -.028em;
+                                        color: $main-text-color;
+                                    }
+                                    li{
+                                        font-family: $body-font;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: $main-text-color;
+                                        letter-spacing: -.028em;
+                                    }
+                                }
+                                /* left */
+                                .text-box:nth-child(2){
+                                    left: 24%;
+                                    bottom: 28%;
+                                }
+                            }
+                        }
+                        .swiper-slide:nth-child(2) {
+                            .item-bg {
+                                background: rgb(214, 244, 211);
+                            }
+                        }
+                        .swiper-slide:nth-child(3) {
+                            .item-bg {
+                                background: rgb(255, 227, 227);
+                            }
                         }
                     }
+                }
+            }
+        }
+        .made.scrolled {
+            .container {
+                #made {
+                    width: 100%;
                 }
             }
         }

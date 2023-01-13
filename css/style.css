@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /* font */
+/* 수트 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "SUIT-Regular";
@@ -6,7 +8,22 @@
   font-weight: normal;
   font-style: normal;
 }
+/* 나눔스퀘어라운드 */
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 삼립호빵 */
+@font-face {
+  font-family: "SDSamliphopangche_Basic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* css variable */
+/* common styles */
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +45,13 @@ li {
   list-style: none;
 }
 
+/* clear fix */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #wrap {
   width: 100%;
   height: auto;
@@ -45,6 +69,7 @@ li {
   top: 0;
   left: 0;
   z-index: 99;
+  transition: all 0.4s;
 }
 #wrap header .container {
   display: flex;
@@ -97,6 +122,9 @@ li {
   background: #1a1a1c;
   border: 1px solid #1a1a1c;
   margin-left: 10px;
+}
+#wrap header.fixed {
+  background: rgba(255, 255, 255, 0.4);
 }
 #wrap main {
   width: 100%;
@@ -245,7 +273,7 @@ li {
 }
 #wrap main .news .container #news #news-pager .swiper-pagination-bullet-active {
   transform: scaleX(2);
-  border-radius: 2px;
+  border-radius: 40%;
   background: #fc9199;
 }
 #wrap main #category {
@@ -654,29 +682,190 @@ li {
 #wrap main #category .container .right .bottom .pency:hover a img {
   transform: rotate(90deg) scale(1.1);
 }
-#wrap main .made {
+#wrap main .best-items {
+  width: 100%;
   padding-top: 160px;
+  background: #fff;
+}
+#wrap main .best-items .container {
+  width: 1440px;
+  height: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+#wrap main .best-items .container .subtitle {
+  color: #fc9199;
+  font-family: "NanumSquareRound";
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#wrap main .best-items .container .title {
+  font-family: "SDSamliphopangche_Basic";
+  font-size: 32px;
+  color: #1a1a1c;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#wrap main .best-items .container .best_img ul {
+  display: flex;
+}
+#wrap main .best-items .container .best_img ul li {
+  padding-right: 53px;
+}
+#wrap main .best-items .container .best_img ul li .img_box {
+  width: 320px;
+  height: 320px;
+  outline: 2px solid #c0c0c0;
+  border-radius: 26px;
+}
+#wrap main .best-items .container .best_img ul li .img_box a img {
+  width: 320px;
+  height: 320px;
+  transition: all 0.4s;
+}
+#wrap main .best-items .container .best_img ul li .img_box a img:hover {
+  transform: scale(1.1);
+}
+#wrap main .best-items .container .best_img ul li .des_box {
+  margin-top: 30px;
+  padding: 0 20px;
+  font-family: "NanumSquareRound";
+}
+#wrap main .best-items .container .best_img ul li .des_box .brand_name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#wrap main .best-items .container .best_img ul li .des_box .name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#wrap main .best-items .container .best_img ul li .des_box .price_box .price {
+  font-size: 25px;
+  font-weight: bold;
+}
+#wrap main .best-items .container .best_img ul li .des_box .price_box .won {
+  font-size: 18px;
+  font-weight: 500;
+}
+#wrap main .best-items .container .best_img ul li:nth-child(4) {
+  padding-right: 0px;
+}
+#wrap main .made {
+  padding: 160px 0;
   width: 100%;
   height: auto;
-  background: rgb(85, 166, 39);
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #wrap main .made .container {
-  border: 1px solid red;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#wrap main .made .container .title-wrap {
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+#wrap main .made .container .title-wrap .label {
+  color: #fc9199;
+  font-family: "NanumSquareRound";
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin-bottom: 10px;
+}
+#wrap main .made .container .title-wrap .title {
+  font-family: "SDSamliphopangche_Basic";
+  font-size: 32px;
+  color: #1a1a1c;
+  font-weight: normal;
+  text-align: center;
+}
+#wrap main .made .container #made {
+  width: 30%;
+  transition: all 1s;
 }
 #wrap main .made .container #made .swiper-wrapper {
+  position: relative;
   /* made1 */
 }
 #wrap main .made .container #made .swiper-wrapper .swiper-slide {
-  background: #f2edd0;
   width: 100%;
-  height: 580px;
+  height: 500px;
   border-radius: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-bg {
+  width: 100%;
+  height: 400px;
+  background: #f2edd0;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* right */
+  /* left */
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box img {
+  height: 280px;
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box {
+  position: absolute;
+  right: 24%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box li:not(:last-child) {
+  margin-bottom: 10px;
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box li.title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: -0.028em;
+  color: #1a1a1c;
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box li {
+  font-family: "NanumSquareRound";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1a1a1c;
+  letter-spacing: -0.028em;
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box:nth-child(2) {
+  left: 24%;
+  bottom: 28%;
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide:nth-child(2) .item-bg {
+  background: rgb(214, 244, 211);
+}
+#wrap main .made .container #made .swiper-wrapper .swiper-slide:nth-child(3) .item-bg {
+  background: rgb(255, 227, 227);
+}
+#wrap main .made.scrolled .container #made {
+  width: 100%;
 }
 #wrap footer {
   width: 100%;

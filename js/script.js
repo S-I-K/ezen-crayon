@@ -27,11 +27,21 @@ $(()=>{
         },
     });
     var made = new Swiper("#made", {
-        // slidesPerView: 'auto',
+        slidesPerView: 'auto',
         spaceBetween: 40,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+    });
+    /* scrollToGiverClass */
+    $("header").scrollToGiveClass({
+        class: "fixed",
+        baseline: 80,
+    });
+    $(".made").scrollToGiveClass({
+        class: "scrolled",
+        baseline: "middle",
+        add: 100,
     });
 });
