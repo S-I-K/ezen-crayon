@@ -166,7 +166,7 @@ li {
   border-radius: 14px;
 }
 #wrap main .news {
-  padding-top: 160px;
+  padding: 160px 0;
   width: 100%;
   height: auto;
   background: #fff;
@@ -272,6 +272,9 @@ li {
   font-family: "SUIT-Regular";
   font-style: italic;
 }
+#wrap main #category .container p {
+  font-family: "SUIT-Regular";
+}
 #wrap main #category .container .left .home {
   width: 438px;
   height: 760px;
@@ -365,7 +368,7 @@ li {
   opacity: 1;
   transition: all 0.4s;
 }
-#wrap main #category .container .center .life .category_1 {
+#wrap main #category .container .center .life .category_l {
   width: 438px;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -376,11 +379,11 @@ li {
   transition: all 0.4s;
   transform: translateY(60px);
 }
-#wrap main #category .container .center .life .category_1 p {
+#wrap main #category .container .center .life .category_l p {
   font-size: 22px;
   color: #fff;
 }
-#wrap main #category .container .center .life .category_1 p:first-child {
+#wrap main #category .container .center .life .category_l p:first-child {
   font-size: 28px;
   color: #fff;
   margin-bottom: 20px;

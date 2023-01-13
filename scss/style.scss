@@ -176,7 +176,7 @@ li {
         }
         /* news */
         .news {
-            padding-top: 160px;
+            padding: 160px 0;
             width: 100%;
             height: auto;
             background: #fff;
@@ -287,6 +287,9 @@ li {
                     font-family: $font;
                     font-style: italic;
                 }
+                p {
+                    font-family: $font;
+                }
                 /* left */
                 .left {
                     .home {
@@ -386,7 +389,7 @@ li {
                                 transition: all .4s;
                             }
                         }
-                        .category_1 {
+                        .category_l {
                             width: 438px;
                             background: rgba(0, 0, 0, .6);
                             position: absolute;
