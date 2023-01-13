@@ -48,10 +48,6 @@ a {
 li {
     list-style: none;
 }
-/* clear fix */
-.clearfix::after {
-    content: ''; display: block; clear: both;
-}
 
 #wrap {
     width: 100%;
@@ -944,6 +940,80 @@ li {
                 }
             }
         }
+        /* faq */
+        .faq {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            // border: 1px solid red;
+            background: #fff;
+            .container {
+                .title {
+                    font-family: $title-font;
+                    font-weight: normal;
+                    text-align: center;
+                    font-size: 32px;
+                    color: $sub-color;
+                    margin-bottom: 60px;
+                }
+                .faq_list{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    ul {
+                        width: 44%;
+                        li {
+                            padding: 30px 0;
+                            border-bottom: 2px solid $sub-color;
+                            .faq_head {
+                                cursor: pointer;
+                                font-family: $body-font;
+                                font-weight: 700;
+                                display: flex;
+                                justify-content: space-between;
+                                // padding-bottom: 20px;
+                                font-size: 24px;
+                                letter-spacing: -.03em;
+                                div {
+                                    span {
+                                        font-family: $title-font;
+                                        color: $sub-color;
+                                        font-size: 24px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                                img.arrow {
+                                    height: 24px;
+                                    transition: all .4s;
+                                }
+                                .arrow.arrow-action {
+                                    transform: rotate(-180deg);
+                                }
+                            }
+                            .faq_content {
+                                // height: 200px;
+                                letter-spacing: -.03em;
+                                line-height: 25px;
+                                padding-left: 24px;
+                                padding-top: 40px;
+                                color: #1a1a1c;
+                                font-family: $body-font;
+                                display: none;
+                                span {
+                                    display: block;
+                                    font-family: $title-font;
+                                    color: $sub-color;
+                                    font-weight: 700;
+                                    font-size: 25px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     /* footer */
     footer {
@@ -955,7 +1025,6 @@ li {
         .container {
           width: 1440px;
           height: auto;
-          background: #101010;
           text-align: center;
           justify-content: center;
         //   border: 1px solid red;

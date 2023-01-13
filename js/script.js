@@ -3,6 +3,13 @@ $(()=>{
     $('a').click((e)=>{
         e.preventDefault();
     });
+    /* faq toggle event */
+    $('.faq_head').click(function(){
+        $(this).children('.arrow').toggleClass('arrow-action');
+        $('.faq_head').children('.arrow').not($(this).children('.arrow')).removeClass('arrow-action');
+        $('.faq_content').stop().slideUp(400);
+        $(this).siblings(".faq_content").stop().slideToggle(400);
+    });
     var card = new Swiper("#card-wrap", {
         effect: "cards",
         grabCursor: true,
