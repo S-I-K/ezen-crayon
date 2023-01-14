@@ -681,6 +681,8 @@ li {
   width: 100%;
   padding-top: 160px;
   background: #fff;
+  display: flex;
+  justify-content: center;
 }
 #wrap main .best-items .container {
   width: 1440px;
