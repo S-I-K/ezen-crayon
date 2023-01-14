@@ -940,6 +940,137 @@ li {
                 }
             }
         }
+        /* brand */
+        #brand{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            background: #fff;
+            padding-bottom: 160px;
+            .container{
+                position: relative;
+                width: 1440px;
+                height: 100%;
+                padding: 0 20px;
+                display: flex;
+                .brand_box{
+                    position: relative;
+                    width: 100%;
+                    height: 300px;
+                    background: #8e9cbf;
+                    border: 1px solid $sub-color;
+                    border-radius: 51px;
+                    overflow: hidden;
+                    z-index: 70;
+                    .brand_wrap{
+                        a {
+                            img {}
+                            .B01 {
+                                position: relative;
+                                top: -50px;
+                                margin: 0 68px;
+                                animation: "shake" 4s;
+                                animation-iteration-count: infinite;
+                            }
+                            .B02 {
+                                position: relative;
+                                top: -50px;
+                                margin: 0 68px;
+                                animation: "shake" 3.5s;
+                                animation-iteration-count: infinite;
+                            }
+                            .B03 {
+                                position: relative;
+                                top: -50px;
+                                margin: 0 68px;
+                                animation: "shake" 3s;
+                                animation-iteration-count: infinite;
+                            }
+                            .B04 {
+                                position: relative;
+                                top: -50px;
+                                margin: 0 68px;
+                                animation: "shake" 6s;
+                                animation-iteration-count: infinite;
+                            }
+                            .B05 {
+                                position: relative;
+                                bottom: 50px;
+                                left: -80px;
+                                animation: "shake" 2s;
+                                animation-iteration-count: infinite;
+                            }
+                            .B06 {
+                                position: relative;
+                                bottom: 50px;
+                                left: 30px;
+                                animation: "shake" 5s;
+                                animation-iteration-count: infinite;
+                            }
+                            .B07 {
+                                position: relative;
+                                bottom: 50px;
+                                left: 170px;
+                                animation: "shake" 3.3s;
+                                animation-iteration-count: infinite;
+                            }
+                            .B08 {
+                                position: relative;
+                                bottom: 50px;
+                                left: 310px;
+                                animation: "shake" 2.8s;
+                                animation-iteration-count: infinite;
+                            }
+                            .B09 {
+                                position: relative;
+                                bottom: 50px;
+                                left: 450px;
+                                animation: "shake" 3.7s;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+                    }
+                }
+                .search {
+                    width: 533px;
+                    height: 67px;
+                    background: rgba(255, 255, 255, 0.8);
+                    border-radius: 33px;
+                    z-index: 9999;
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    border: 1px solid $main-color;
+                    input {
+                        width: 450px;
+                        height: 62px;
+                        border: none;
+                        margin-left: 50px;
+                        font-size: 18px;
+                        background:none;
+                        outline: none;
+                    }
+                    input:focus {
+                        outline: none;
+                    }
+                    input::placeholder{
+                        color: #838383;
+                        text-align: center;
+                    }
+                    input:focus::placeholder{
+                        color: transparent;
+                    }
+                    img {
+                        position: absolute;
+                        right: 14px;
+                        top: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
         /* faq */
         .faq {
             width: 100%;
@@ -948,6 +1079,7 @@ li {
             justify-content: center;
             // border: 1px solid red;
             background: #fff;
+            // padding-top: 160px;
             .container {
                 .title {
                     font-family: $title-font;
@@ -1097,4 +1229,12 @@ li {
           }
         }
     }
+} /* end: #wrap */
+
+@keyframes shake {
+    0% { transform: translate(4px, 8px) rotate(0deg); }
+    
+    50% { transform: translate(0px, 0px) rotate(0deg); }
+    
+    100% { transform: translate(4px, 8px) rotate(0deg); }
 }

@@ -126,6 +126,7 @@ li {
   /* category */
   /* product */
   /* made */
+  /* brand */
   /* faq */
 }
 #wrap main .intro {
@@ -861,6 +862,163 @@ li {
 #wrap main .made.scrolled .container #made {
   width: 100%;
 }
+#wrap main #brand {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding-bottom: 160px;
+}
+#wrap main #brand .container {
+  position: relative;
+  width: 1440px;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+}
+#wrap main #brand .container .brand_box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #8e9cbf;
+  border: 1px solid #fdac64;
+  border-radius: 51px;
+  overflow: hidden;
+  z-index: 70;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B01 {
+  position: relative;
+  top: -50px;
+  margin: 0 68px;
+  -webkit-animation: "shake" 4s;
+          animation: "shake" 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B02 {
+  position: relative;
+  top: -50px;
+  margin: 0 68px;
+  -webkit-animation: "shake" 3.5s;
+          animation: "shake" 3.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B03 {
+  position: relative;
+  top: -50px;
+  margin: 0 68px;
+  -webkit-animation: "shake" 3s;
+          animation: "shake" 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B04 {
+  position: relative;
+  top: -50px;
+  margin: 0 68px;
+  -webkit-animation: "shake" 6s;
+          animation: "shake" 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B05 {
+  position: relative;
+  bottom: 50px;
+  left: -80px;
+  -webkit-animation: "shake" 2s;
+          animation: "shake" 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B06 {
+  position: relative;
+  bottom: 50px;
+  left: 30px;
+  -webkit-animation: "shake" 5s;
+          animation: "shake" 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B07 {
+  position: relative;
+  bottom: 50px;
+  left: 170px;
+  -webkit-animation: "shake" 3.3s;
+          animation: "shake" 3.3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B08 {
+  position: relative;
+  bottom: 50px;
+  left: 310px;
+  -webkit-animation: "shake" 2.8s;
+          animation: "shake" 2.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .brand_box .brand_wrap a .B09 {
+  position: relative;
+  bottom: 50px;
+  left: 450px;
+  -webkit-animation: "shake" 3.7s;
+          animation: "shake" 3.7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#wrap main #brand .container .search {
+  width: 533px;
+  height: 67px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 33px;
+  z-index: 9999;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid #fc9199;
+}
+#wrap main #brand .container .search input {
+  width: 450px;
+  height: 62px;
+  border: none;
+  margin-left: 50px;
+  font-size: 18px;
+  background: none;
+  outline: none;
+}
+#wrap main #brand .container .search input:focus {
+  outline: none;
+}
+#wrap main #brand .container .search input::-moz-placeholder {
+  color: #838383;
+  text-align: center;
+}
+#wrap main #brand .container .search input:-ms-input-placeholder {
+  color: #838383;
+  text-align: center;
+}
+#wrap main #brand .container .search input::placeholder {
+  color: #838383;
+  text-align: center;
+}
+#wrap main #brand .container .search input:focus::-moz-placeholder {
+  color: transparent;
+}
+#wrap main #brand .container .search input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+#wrap main #brand .container .search input:focus::placeholder {
+  color: transparent;
+}
+#wrap main #brand .container .search img {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  cursor: pointer;
+}
 #wrap main .faq {
   width: 100%;
   height: 600px;
@@ -1002,4 +1160,28 @@ li {
   font-family: "SUIT-Regular";
   font-weight: 400;
   font-size: 14px;
+}
+
+/* end: #wrap */
+@-webkit-keyframes shake {
+  0% {
+    transform: translate(4px, 8px) rotate(0deg);
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(4px, 8px) rotate(0deg);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate(4px, 8px) rotate(0deg);
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(4px, 8px) rotate(0deg);
+  }
 }
