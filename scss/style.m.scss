@@ -44,12 +44,8 @@
                         }
                     }
                     .card {
-                        width: 100%;
+                        // width: 100%;
                         transform: rotate(-15deg);
-                        #card-wrap {
-                            width: 260px;
-                            height: 360px;
-                        }
                     }
                 }
             }
@@ -273,7 +269,38 @@
 
 /* html >= 375 */
 @media (max-width: 375px) {
-
+    #wrap {
+        main{
+            /* intro */
+            .intro {
+                .container {
+                    .text {
+                        width: 100%;
+                        margin-bottom: 80px;
+                        .text-box {
+                            align-items: center;
+                            span {
+                                font-size: 1.6rem;
+                                b {
+                                    font-size: 3rem;
+                                }
+                            }
+                            span:not(:last-child) {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    .card {
+                        width: 80%;
+                        #card-wrap {
+                            width: 220px;
+                            height: 320px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* html >= 769px */
