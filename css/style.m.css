@@ -50,7 +50,12 @@
     margin-bottom: 0px;
   }
   #wrap main .intro .container .card {
+    width: 100%;
     transform: rotate(-15deg);
+  }
+  #wrap main .intro .container .card #card-wrap {
+    width: 260px;
+    height: 360px;
   }
   #wrap main .news {
     padding: 0;

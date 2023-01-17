@@ -44,7 +44,12 @@
                         }
                     }
                     .card {
+                        width: 100%;
                         transform: rotate(-15deg);
+                        #card-wrap {
+                            width: 260px;
+                            height: 360px;
+                        }
                     }
                 }
             }
