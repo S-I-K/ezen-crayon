@@ -21,12 +21,14 @@
     /* category */
     /* best items */
     /* made */
+    /* brand */
+    /* faq */
   }
   #wrap main .intro {
     height: auto;
     padding: 200px 0;
     background: rgb(255, 215, 163);
-    background: linear-gradient(120deg, rgb(255, 215, 163) 38%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(180deg, rgb(255, 215, 163) 32%, rgb(255, 255, 255) 100%);
   }
   #wrap main .intro .container {
     flex-direction: column;
@@ -50,6 +52,16 @@
   #wrap main .intro .container .card {
     transform: rotate(-15deg);
   }
+  #wrap main .news {
+    padding: 0;
+  }
+  #wrap main .news .container .title-wrap .label {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  #wrap main .news .container .title-wrap .title {
+    font-size: 1.6rem;
+  }
   #wrap main .news .container #news .swiper-wrapper .swiper-slide {
     flex-direction: column;
     align-items: center;
@@ -69,7 +81,7 @@
   }
   #wrap main .news .container #news .swiper-wrapper .swiper-slide .text-box h3 {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   #wrap main .news .container #news .swiper-wrapper .swiper-slide .text-box p {
     text-align: left;
@@ -77,6 +89,16 @@
   }
   #wrap main #category {
     display: none;
+  }
+  #wrap main .best-items .container .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  #wrap main .best-items .container .title {
+    font-size: 1.6rem;
+  }
+  #wrap main .best-items .container .best_img ul {
+    flex-wrap: wrap;
   }
   #wrap main .best-items .container .best_img ul li .img_box {
     width: 152px;
@@ -104,7 +126,67 @@
   #wrap main .best-items .container .best_img ul li .des_box .price_box .won {
     font-size: 0.9rem;
   }
+  #wrap main .made .container .title-wrap .label {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  #wrap main .made .container .title-wrap .title {
+    font-size: 1.6rem;
+  }
+  #wrap main .made .container #made {
+    width: 40%;
+  }
+  #wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box:nth-child(1) {
+    left: auto;
+    right: 2%;
+    bottom: 22%;
+  }
+  #wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box:nth-child(1) li.title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  #wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box:nth-child(1) li {
+    font-size: 0.9rem;
+  }
+  #wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box:nth-child(2) {
+    display: none;
+  }
+  #wrap main #brand .container .brand_box {
+    height: 100px;
+    border-radius: 24px;
+  }
+  #wrap main #brand .container .brand_box .brand_wrap a img {
+    width: 80px;
+    height: 80px;
+  }
+  #wrap main #brand .container .brand_box .brand_wrap a .B04 {
+    display: none;
+  }
+  #wrap main #brand .container .search {
+    height: 58px;
+  }
+  #wrap main .faq {
+    height: 760px;
+  }
+  #wrap main .faq .container .title {
+    font-size: 1.6rem;
+  }
+  #wrap main .faq .container .faq_list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #wrap main .faq .container .faq_list ul {
+    width: 70%;
+  }
+  #wrap main .faq .container .faq_list ul li .faq_head {
+    font-size: 1.2rem;
+  }
+  #wrap main .faq .container .faq_list ul li .faq_content {
+    font-size: 0.9rem;
+  }
 }
+/* html >= 375 */
 /* html >= 769px */
 @media (min-width: 769px) {
   #wrap {

@@ -243,16 +243,16 @@ li {
 }
 #wrap main .news .container .title-wrap .label {
   color: #fc9199;
-  font-family: "Montserrat", sans-serif;
+  font-family: "NanumSquareRound";
   font-weight: 500;
   letter-spacing: -0.025em;
   margin-bottom: 10px;
 }
 #wrap main .news .container .title-wrap .title {
-  font-family: "SUIT-Regular";
+  font-family: "SDSamliphopangche_Basic";
   font-size: 32px;
   color: #1a1a1c;
-  font-weight: 600;
+  font-weight: normal;
   text-align: center;
 }
 #wrap main .news .container #news {
@@ -871,6 +871,8 @@ li {
   height: 280px;
 }
 #wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box {
+  opacity: 0;
+  transition: all 0.4s;
   position: absolute;
   right: 24%;
   bottom: 0;
@@ -896,7 +898,7 @@ li {
   color: #1a1a1c;
   letter-spacing: -0.028em;
 }
-#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box:nth-child(2) {
+#wrap main .made .container #made .swiper-wrapper .swiper-slide .item-box .text-box:nth-child(1) {
   left: 24%;
   bottom: 28%;
 }
@@ -909,6 +911,9 @@ li {
 #wrap main .made.scrolled .container #made {
   width: 100%;
 }
+#wrap main .made.scrolled .container #made .swiper-wrapper .item-box .text-box {
+  opacity: 1;
+}
 #wrap main #brand {
   width: 100%;
   height: auto;
@@ -919,9 +924,6 @@ li {
 }
 #wrap main #brand .container {
   position: relative;
-  width: 1440px;
-  height: 100%;
-  padding: 0 20px;
   display: flex;
 }
 #wrap main #brand .container .brand_box {
@@ -933,6 +935,12 @@ li {
   border-radius: 51px;
   overflow: hidden;
   z-index: 70;
+}
+#wrap main #brand .container .brand_box .brand_wrap {
+  opacity: 0.6;
+}
+#wrap main #brand .container .brand_box .brand_wrap a {
+  display: block;
 }
 #wrap main #brand .container .brand_box .brand_wrap a .B01 {
   position: relative;
@@ -1022,10 +1030,14 @@ li {
   border-radius: 33px;
   z-index: 9999;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   border: 1px solid #fc9199;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 #wrap main #brand .container .search input {
   width: 450px;
@@ -1035,6 +1047,7 @@ li {
   font-size: 18px;
   background: none;
   outline: none;
+  font-family: "NanumSquareRound";
 }
 #wrap main #brand .container .search input:focus {
   outline: none;
@@ -1042,14 +1055,17 @@ li {
 #wrap main #brand .container .search input::-moz-placeholder {
   color: #838383;
   text-align: center;
+  font-family: "NanumSquareRound";
 }
 #wrap main #brand .container .search input:-ms-input-placeholder {
   color: #838383;
   text-align: center;
+  font-family: "NanumSquareRound";
 }
 #wrap main #brand .container .search input::placeholder {
   color: #838383;
   text-align: center;
+  font-family: "NanumSquareRound";
 }
 #wrap main #brand .container .search input:focus::-moz-placeholder {
   color: transparent;
@@ -1061,9 +1077,6 @@ li {
   color: transparent;
 }
 #wrap main #brand .container .search img {
-  position: absolute;
-  right: 14px;
-  top: 14px;
   cursor: pointer;
 }
 #wrap main .faq {

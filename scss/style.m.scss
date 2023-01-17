@@ -24,7 +24,7 @@
                 height: auto;
                 padding: 200px 0;
                 background: rgb(255,215,163);
-background: linear-gradient(120deg, rgba(255,215,163,1) 38%, rgba(255,255,255,1) 100%);
+                background: linear-gradient(180deg, rgba(255,215,163,1) 32%, rgba(255,255,255,1) 100%);
                 .container {
                     flex-direction: column;
                     .text {
@@ -50,13 +50,15 @@ background: linear-gradient(120deg, rgba(255,215,163,1) 38%, rgba(255,255,255,1)
             }
             /* news */
             .news {
+                padding:0;
                 .container {
                     .title-wrap {
                         .label {
-
+                            font-size: .9rem;
+                            margin-bottom: 4px;
                         }
                         .title {
-
+                            font-size: 1.6rem;
                         }
                     }
                     #news {
@@ -78,7 +80,7 @@ background: linear-gradient(120deg, rgba(255,215,163,1) 38%, rgba(255,255,255,1)
                                     align-items: center;
                                     h3{
                                         text-align: center;
-                                        font-size: 1.6rem;
+                                        font-size: 1.2rem;
                                     }
                                     p {
                                         text-align: left;
@@ -98,15 +100,15 @@ background: linear-gradient(120deg, rgba(255,215,163,1) 38%, rgba(255,255,255,1)
             .best-items{
                 .container {
                     .subtitle{
-
+                        font-size: .9rem;
+                        margin-bottom: 4px;
                     }
                     .title{
-                        p {
-
-                        }
+                        font-size: 1.6rem;
                     }
                     .best_img {
                         ul {
+                            flex-wrap: wrap;
                             li {
                                 .img_box {
                                     width: 152px;
@@ -147,13 +149,114 @@ background: linear-gradient(120deg, rgba(255,215,163,1) 38%, rgba(255,255,255,1)
             .made {
                 .container {
                     .title-wrap{
-                        .label{}
-                        .title{}
+                        .label{
+                            font-size: .9rem;
+                            margin-bottom: 4px;
+                        }
+                        .title{
+                            font-size: 1.6rem;
+                        }
                     }
                     #made {
+                        width: 40%;
                         .swiper-wrapper{
                             .swiper-slide {
+                                .item-bg {
+                                    
+                                }
+                                .item-box {
+                                    img {
+                                        
+                                    }
+                                    .text-box:nth-child(1) {
+                                        left: auto;
+                                        right: 2%;
+                                        bottom: 22%;
+                                        li.title {
+                                            font-size: 1.2rem;
+                                            margin-bottom: 10px;
+                                        }
+                                        li {
+                                            font-size: .9rem;
+                                        }
+                                    }
+                                    .text-box:nth-child(2) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* brand */
+            #brand {
+                .container {
+                    .brand_box {
+                        height: 100px;
+                        border-radius: 24px;
+                        .brand_wrap {
+                            a {
+                                img {
+                                    width: 80px;
+                                    height: 80px;
+                                }
+                                .B01 {}
+                                .B02 {}
+                                .B03 {}
+                                .B04 {
+                                    display: none;
+                                }
+                                .B05 {}
+                                .B06 {}
+                                .B07 {}
+                                .B08 {}
+                                .B09 {}
+                            }
+                        }
+                    }
+                    .search {
+                        height: 58px;
+                        input {
+                        }
+                        img {}
+                    }
+                }
+            }
+            /* faq */
+            .faq {
+                height: 760px;
+                .container {
+                    .title {
+                        font-size: 1.6rem;
+                    }
+                    .faq_list {
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        ul {
+                            width: 70%;
+                            li {
+                                .faq_head {
+                                    font-size: 1.2rem;
+                                    div {
+                                        span {
 
+                                        }
+                                    }
+                                    img.arrow {
+
+                                    }
+                                    .arrow.arrow-action {
+
+                                    }
+                                }
+                                .faq_content {
+                                    font-size: .9rem;
+                                    span {
+
+                                    }
+                                }
                             }
                         }
                     }
@@ -161,6 +264,11 @@ background: linear-gradient(120deg, rgba(255,215,163,1) 38%, rgba(255,255,255,1)
             }
         }
     }
+}
+
+/* html >= 375 */
+@media (max-width: 375px) {
+
 }
 
 /* html >= 769px */
