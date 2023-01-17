@@ -1,0 +1,184 @@
+/* html <= 768px */
+@media (max-width: 768px) {
+    /* #wrap */
+    #wrap {
+        /* common style */
+        .container{
+            width: 100%;
+        }
+        /* header */
+        header {
+            .container {
+                .category {
+                    display: none;
+                }
+                .user-menu {
+                    display: none;
+                }
+            }
+        }
+        /* main */
+        main {
+            /* intro */
+            .intro {
+                height: auto;
+                padding: 200px 0;
+                background: rgb(255,215,163);
+background: linear-gradient(120deg, rgba(255,215,163,1) 38%, rgba(255,255,255,1) 100%);
+                .container {
+                    flex-direction: column;
+                    .text {
+                        width: 100%;
+                        margin-bottom: 80px;
+                        .text-box {
+                            align-items: center;
+                            span {
+                                font-size: 2.3rem;
+                                b {
+                                    font-size: 4rem;
+                                }
+                            }
+                            span:not(:last-child) {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    .card {
+                        transform: rotate(-15deg);
+                    }
+                }
+            }
+            /* news */
+            .news {
+                .container {
+                    .title-wrap {
+                        .label {
+
+                        }
+                        .title {
+
+                        }
+                    }
+                    #news {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                flex-direction: column;
+                                align-items: center;
+                                .img-box{
+                                    width: 70%;
+                                    margin: 0;
+                                    margin-bottom: 30px;
+                                    img {
+                                        width: auto;
+                                        height: 120%;
+                                    }
+                                }
+                                .text-box {
+                                    width: 70%;
+                                    align-items: center;
+                                    h3{
+                                        text-align: center;
+                                        font-size: 1.6rem;
+                                    }
+                                    p {
+                                        text-align: left;
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* category */
+            #category {
+                display: none;
+            }
+            /* best items */
+            .best-items{
+                .container {
+                    .subtitle{
+
+                    }
+                    .title{
+                        p {
+
+                        }
+                    }
+                    .best_img {
+                        ul {
+                            li {
+                                .img_box {
+                                    width: 152px;
+                                    height: 152px;
+                                    a {
+                                        img {
+                                            width: 152px;
+                                            height: 152px;
+                                        }
+                                    }
+                                }
+                                .des_box {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    .brand_name{
+                                        font-size: .9rem;
+                                    }
+                                    .name{
+                                        font-size: 1rem;
+                                    }
+                                    .price_box{
+                                        .price{
+                                            font-size: 1.4rem;
+                                        }
+                                        .won{
+                                            font-size: .9rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* made */
+            .made {
+                .container {
+                    .title-wrap{
+                        .label{}
+                        .title{}
+                    }
+                    #made {
+                        .swiper-wrapper{
+                            .swiper-slide {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* html >= 769px */
+@media (min-width: 769px) {
+    #wrap {
+        .container {
+
+        }
+        /* header */
+        header {
+            .container {
+                .m-category {
+                    display: none;
+                }
+                .m-user-menu {
+                    display: none;
+                }
+            }
+        }
+    }
+}

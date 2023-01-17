@@ -70,6 +70,24 @@ li {
             justify-content: space-between;
             // border:1px solid red;
             padding: 15px 20px;
+            /* mobile left */
+            .m-category {
+                // border: 1px solid red;
+                width: 34px;
+                margin-right: 58px;
+                height: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background: $main-color;
+                }
+            }
             /* left */
             .logo {
                 // border: 1px solid red;
@@ -95,6 +113,26 @@ li {
                 }
                 li:not(:last-child){
                     margin-right: 50px;
+                }
+            }
+            /* mobile right */
+            .m-user-menu {
+                display: flex;
+                li {
+                    border: 1px solid red;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 34px;
+                        height: 34px;
+                        img {
+                            /* 넣어야함 */
+                        }
+                    }
+                }
+                li:not(:last-child){
+                    margin-right: 20px;
                 }
             }
             /* right */
@@ -280,9 +318,10 @@ li {
                         bottom: 0;
                         .swiper-pagination-bullet{
                             background: red;
+                            transition: all .4s;
                         }
                         .swiper-pagination-bullet-active {
-                            transform: scaleX(2);
+                            transform: scaleX(1.6);
                             border-radius: 40%;
                             background: $main-color;
                         }
@@ -737,10 +776,7 @@ li {
             display: flex;
             justify-content: center;
             .container {
-                width: 1440px;
                 height: auto;
-                padding: 0 20px;
-                margin: 0 auto;
                 .subtitle {
                     color: $main-color;
                     font-family: $body-font;
@@ -763,14 +799,21 @@ li {
                 .best_img {
                     ul {
                         display: flex;
+                        align-items: center;
+                        justify-content: center;
                         li {
                             // float: left;
-                            padding-right:53px;
+                            // padding-right:53px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
                             .img_box {
                                 width: 320px; height: 320px;
                                 outline: 2px solid #c0c0c0;
                                 border-radius: 26px;
                                 a {
+                                    display: block;
                                     img {
                                         width: 320px;
                                         height: 320px;
@@ -782,37 +825,39 @@ li {
                                 }
                             }
                             .des_box {
-                                margin-top: 30px;
-                                padding: 0 20px;
                                 font-family: $body-font;
+                                margin-top: 20px;
+                                width: 100%;
                                 .brand_name {
-                                    margin-bottom: 10px;
                                     font-size: 16px;
-                                    font-weight: bold;
+                                    font-weight: 500;
+                                    color: #747474;
                                     p{}
                                 }
                                 .name {
-                                    font-size: 16px;
-                                    font-weight: 500;
-                                    margin-bottom: 20px;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    margin-bottom: 10px;
+                                    letter-spacing: -.025em;
                                     a{
 
                                     }
                                 }
                                 .price_box {
                                     .price{
-                                        font-size: 25px;
-                                        font-weight: bold;
+                                        font-size: 28px;
+                                        font-weight: 700;
+                                        letter-spacing: 0;
                                     }
                                     .won {
-                                        font-size: 18px;
+                                        font-size: 16px;
                                         font-weight: 500;
                                     }
                                 }
                             }
                         }
-                        li:nth-child(4){
-                            padding-right:0px;
+                        li:not(:last-child){
+                            margin-right: 40px;
                         }
                     }
                 }

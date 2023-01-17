@@ -69,9 +69,27 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
+  /* mobile left */
   /* left */
   /* center */
+  /* mobile right */
   /* right */
+}
+#wrap header .container .m-category {
+  width: 34px;
+  margin-right: 58px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+#wrap header .container .m-category span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #fc9199;
 }
 #wrap header .container .logo img {
   width: 170px;
@@ -91,6 +109,25 @@ li {
 }
 #wrap header .container .category li:not(:last-child) {
   margin-right: 50px;
+}
+#wrap header .container .m-user-menu {
+  display: flex;
+}
+#wrap header .container .m-user-menu li {
+  border: 1px solid red;
+}
+#wrap header .container .m-user-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+}
+#wrap header .container .m-user-menu li a img {
+  /* 넣어야함 */
+}
+#wrap header .container .m-user-menu li:not(:last-child) {
+  margin-right: 20px;
 }
 #wrap header .container .user-menu {
   width: 250px;
@@ -265,9 +302,10 @@ li {
 }
 #wrap main .news .container #news #news-pager .swiper-pagination-bullet {
   background: red;
+  transition: all 0.4s;
 }
 #wrap main .news .container #news #news-pager .swiper-pagination-bullet-active {
-  transform: scaleX(2);
+  transform: scaleX(1.6);
   border-radius: 40%;
   background: #fc9199;
 }
@@ -685,10 +723,7 @@ li {
   justify-content: center;
 }
 #wrap main .best-items .container {
-  width: 1440px;
   height: auto;
-  padding: 0 20px;
-  margin: 0 auto;
 }
 #wrap main .best-items .container .subtitle {
   color: #fc9199;
@@ -707,15 +742,23 @@ li {
 }
 #wrap main .best-items .container .best_img ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #wrap main .best-items .container .best_img ul li {
-  padding-right: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #wrap main .best-items .container .best_img ul li .img_box {
   width: 320px;
   height: 320px;
   outline: 2px solid #c0c0c0;
   border-radius: 26px;
+}
+#wrap main .best-items .container .best_img ul li .img_box a {
+  display: block;
 }
 #wrap main .best-items .container .best_img ul li .img_box a img {
   width: 320px;
@@ -726,30 +769,32 @@ li {
   transform: scale(1.1);
 }
 #wrap main .best-items .container .best_img ul li .des_box {
-  margin-top: 30px;
-  padding: 0 20px;
   font-family: "NanumSquareRound";
+  margin-top: 20px;
+  width: 100%;
 }
 #wrap main .best-items .container .best_img ul li .des_box .brand_name {
-  margin-bottom: 10px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #747474;
 }
 #wrap main .best-items .container .best_img ul li .des_box .name {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.025em;
 }
 #wrap main .best-items .container .best_img ul li .des_box .price_box .price {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 #wrap main .best-items .container .best_img ul li .des_box .price_box .won {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
-#wrap main .best-items .container .best_img ul li:nth-child(4) {
-  padding-right: 0px;
+#wrap main .best-items .container .best_img ul li:not(:last-child) {
+  margin-right: 40px;
 }
 #wrap main .made {
   padding: 160px 0;

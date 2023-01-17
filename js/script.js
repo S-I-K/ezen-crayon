@@ -20,14 +20,15 @@ $(()=>{
         },
     });
     var news = new Swiper("#news", {
+        slidesPerView: 'auto',
+        spaceBetween: 40,
         pagination: {
             el: ".swiper-pagination",
         },
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        slidesPerView: 'auto',
+        // autoplay: {
+        //     delay: 4000,
+        //     disableOnInteraction: false,
+        // },
         pagination: {
             el: "#news-pager",
             clickable: true,
